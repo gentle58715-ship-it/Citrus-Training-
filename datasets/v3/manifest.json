@@ -1,10 +1,10 @@
 {
   "version": "v3",
   "status": "in_progress",
-  "target_total": 150000,
+  "target_total": 300000,
   "target_counts": {
-    "knowledge": 45000,
-    "practice": 105000
+    "knowledge": 90000,
+    "practice": 210000
   },
   "actual_counts": {
     "knowledge": 36,
@@ -14,78 +14,78 @@
   "categories": [
     {
       "name": "luau",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "api_services",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "client_server",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "datastore",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "animation_r6",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "animation_r15",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "gui_ui",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "mesh_3d",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "physics",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "security",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "optimization",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "debugging",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "architecture",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "tool_calling",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     },
     {
       "name": "project_editing",
-      "target_knowledge": 3000,
-      "target_practice": 7000
+      "target_knowledge": 6000,
+      "target_practice": 14000
     }
   ],
   "format": "messages",
@@ -97,5 +97,8 @@
   "candidate_files": [
     "candidates/seed_0001.jsonl",
     "candidates/batch_0002.jsonl"
-  ]
+  ],
+  "background_followup_enabled": true,
+  "current_kaggle_run": "https://www.kaggle.com/code/rrachphl/citrus-dataset-generation-50k",
+  "generation_target_not_completed": true
 }
