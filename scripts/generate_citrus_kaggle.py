@@ -108,6 +108,19 @@ def category_targets(total, names):
     base, extra = divmod(total, len(names))
     return {name: base + (i < extra) for i, name in enumerate(names)}
 
+def configure_targets(db, targets, extend=False):
+    config = json.dumps(targets, sort_keys=True)
+    old = db.execute("SELECT value FROM settings WHERE key='targets'").fetchone()
+    if old and old[0] != config:
+        previous = json.loads(old[0])
+        if not extend or set(previous) != set(targets) or any(targets[k] < previous[k] for k in targets):
+            raise RuntimeError('Resume target mismatch; use --extend-targets only to increase existing quotas')
+    actual = counts(db)
+    if any(actual[k] > n for k, n in targets.items()):
+        raise RuntimeError('Existing records exceed requested quotas')
+    db.execute("INSERT OR REPLACE INTO settings VALUES ('targets', ?)", (config,))
+    db.commit()
+
 def next_work(db, targets):
     present = counts(db)
     todo = [k for k in targets if present[k] < targets[k]]
@@ -175,16 +188,14 @@ def main():
     parser.add_argument('--max-failures', type=int, default=20)
     parser.add_argument('--checkpoint-every', type=int, default=30)
     parser.add_argument('--export-only', action='store_true')
+    parser.add_argument('--extend-targets', action='store_true', help='Explicitly increase quotas while preserving all existing records and duplicate checks')
     args = parser.parse_args()
     if min(args.knowledge, args.practice, args.batch_size, args.max_new_tokens, args.max_failures, args.checkpoint_every) <= 0 or args.max_minutes <= 0:
         parser.error('Counts and limits must be positive')
     args.out.mkdir(parents=True, exist_ok=True)
     db = connect(args.out / 'progress.sqlite')
     targets = {'knowledge': args.knowledge, 'practice': args.practice}
-    config = json.dumps(targets, sort_keys=True)
-    old = db.execute("SELECT value FROM settings WHERE key='targets'").fetchone()
-    if old and old[0] != config: raise RuntimeError('Resume target mismatch; use a separate output directory')
-    db.execute("INSERT OR IGNORE INTO settings VALUES ('targets', ?)", (config,)); db.commit()
+    configure_targets(db, targets, args.extend_targets)
     if args.export_only:
         print(json.dumps(export_checkpoint(db, args.out, targets), ensure_ascii=False)); return
     if not next_work(db, targets):
