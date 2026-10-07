@@ -1,0 +1,96 @@
+{
+  "version": "v3",
+  "status": "in_progress",
+  "target_total": 150000,
+  "target_counts": {
+    "knowledge": 45000,
+    "practice": 105000
+  },
+  "actual_counts": {
+    "knowledge": 6,
+    "practice": 14,
+    "total": 20
+  },
+  "categories": [
+    {
+      "name": "luau",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "api_services",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "client_server",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "datastore",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "animation_r6",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "animation_r15",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "gui_ui",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "mesh_3d",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "physics",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "security",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "optimization",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "debugging",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "architecture",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "tool_calling",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    },
+    {
+      "name": "project_editing",
+      "target_knowledge": 3000,
+      "target_practice": 7000
+    }
+  ],
+  "format": "messages",
+  "raw_documentation_allowed": false,
+  "seed_status": "draft_not_training_ready",
+  "existing_v2_included": false,
+  "model_training_started": false
+}
