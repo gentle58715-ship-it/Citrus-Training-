@@ -1,0 +1,34 @@
+{
+  "version": "v2",
+  "total_examples": 3000,
+  "examples_per_category": 500,
+  "generation_scheme": "25 curated core intents x 20 phrasing/context variants",
+  "categories": {
+    "animation": {
+      "count": 500,
+      "path": "datasets/v2/animation_500.jsonl"
+    },
+    "luau": {
+      "count": 500,
+      "path": "datasets/v2/luau_500.jsonl"
+    },
+    "ui": {
+      "count": 500,
+      "path": "datasets/v2/ui_500.jsonl"
+    },
+    "3d": {
+      "count": 500,
+      "path": "datasets/v2/3d_mesh_500.jsonl"
+    },
+    "debug": {
+      "count": 500,
+      "path": "datasets/v2/debug_500.jsonl"
+    },
+    "behavior": {
+      "count": 500,
+      "path": "datasets/v2/behavior_500.jsonl"
+    }
+  },
+  "base_model_target": "Qwen/Qwen2.5-1.5B-Instruct",
+  "format": "messages"
+}
