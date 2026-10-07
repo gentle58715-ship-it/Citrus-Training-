@@ -7,9 +7,9 @@
     "practice": 105000
   },
   "actual_counts": {
-    "knowledge": 6,
-    "practice": 14,
-    "total": 20
+    "knowledge": 36,
+    "practice": 84,
+    "total": 120
   },
   "categories": [
     {
@@ -92,5 +92,10 @@
   "raw_documentation_allowed": false,
   "seed_status": "draft_not_training_ready",
   "existing_v2_included": false,
-  "model_training_started": false
+  "model_training_started": false,
+  "approved_total": 0,
+  "candidate_files": [
+    "candidates/seed_0001.jsonl",
+    "candidates/batch_0002.jsonl"
+  ]
 }
