@@ -1,0 +1,10 @@
+{
+  "counts": {
+    "train": 87,
+    "validation": 4,
+    "test": 9
+  },
+  "complete": false,
+  "family_grouped": true,
+  "target_total": 60000
+}

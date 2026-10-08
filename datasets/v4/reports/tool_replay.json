@@ -1,0 +1,279 @@
+{
+  "environment": "Node.js v24.19.0",
+  "engine_sha256": "0550d279d128be3438bf0157cee4c36c08750353629c7b4712c2adbb12c86fa7",
+  "total": 30,
+  "all_passed": true,
+  "roblox_studio_executed": false,
+  "cases": [
+    {
+      "id": "citrus-v4-tool-create-script",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "96fbd2a2571f3e6762ca0f60ee59eb3f468e0e0d409d61c68d0b1a4a988b40c0",
+      "calls": 4,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-patch-unique",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "ec88dc6e201fd86667895edb70e50a72b45fe09b2a8e155cfe4392d52b7b7d9b",
+      "trajectory_sha256": "b3a930c2b252b5be3b9cb06c520895d0bb1377206bf509cf7d2c1de672668319",
+      "calls": 3,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-patch-ambiguity",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "9136bc00a6e72418ef814d672dc7c48dbb2f60bdf65218fb38630914373c2eda",
+      "trajectory_sha256": "4ec1071b8256cdd67bb8f793d1c73479a53a7b01667340fd925c7db25a7c5607",
+      "calls": 4,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-stale-patch",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "6ca9d8a157d20dd2cba3268a5c3a2bf381aac7e24efafcaa2978b1307a0d8a91",
+      "trajectory_sha256": "559c913ac9e50b63f3454a9b161099a47b655469aa781b8b9e9100d330fbf90e",
+      "calls": 3,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-duplicate-path",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "ec88dc6e201fd86667895edb70e50a72b45fe09b2a8e155cfe4392d52b7b7d9b",
+      "trajectory_sha256": "848c76ee3a26a361a28161c44e76946e43bbd59e101d982c4179106d015aca7d",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-rename-references",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "0896a2598f87427523132f02f0920633267ea09bd75de8851edcb8b7ce560dbf",
+      "trajectory_sha256": "8a5b4ef2339ac62c5e0bb8b870b2c385b63c03ea56dd948647bbb5dae374169f",
+      "calls": 3,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-rename-collision",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "aea970e931a562fdfaf4713121af20dc79af27a26cb2be7ab08cba4ac0835704",
+      "trajectory_sha256": "33ee4dbaa98d8dd155cbae0b82e99404f3c4462ff61b442f62beccd08d7cf48f",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-delete-read-first",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "ec88dc6e201fd86667895edb70e50a72b45fe09b2a8e155cfe4392d52b7b7d9b",
+      "trajectory_sha256": "df182da96e8722f7889b29e9351b5390d42f11afdbdc643fee284300022f598c",
+      "calls": 4,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-partial-delete",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "1858cfeffc9bf8713cd489aa523924c03f835c41e10e35793558b68f4f94e8ba",
+      "trajectory_sha256": "02ef1b678f3487895c7fd5fe1807cad80c8fbb180903edfc4295841a47e1d10d",
+      "calls": 4,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-read-reset-on-change",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "ec88dc6e201fd86667895edb70e50a72b45fe09b2a8e155cfe4392d52b7b7d9b",
+      "trajectory_sha256": "eca33e24b8520f5ab2590a54e9f0812ce92117df5c0ee8984a7e9b444ab0d2cc",
+      "calls": 5,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-literal-search",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "7700cec5f58b09bfa7d9ea50c65709c91bc0c832624f86f55a5f79708df63ea3",
+      "trajectory_sha256": "75c7a149bc6262b8e9ecd996601688caa3bc9066ee3fc37fa81f25dfd5ef31c0",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-prefix-list",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "e4cb65db6dc85f4e46c934b604eccfae0c0da445c1bf235716ffa9708aa7861f",
+      "trajectory_sha256": "763d982860c79202afb7d82b3d10fc32793d780a9837581a8b98dd6bcf1f02d6",
+      "calls": 1,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-plan-single-active",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "13478a1123d277f6777daa33434424d9c1918586807c50079ef4541b25374621",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-finish-boundary",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "a1d4815f7fb68c375f2982a22874bf0787c01551b96f9fe54d76c7fa03a2c558",
+      "calls": 3,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-schema-is-not-syntax",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "0130b8ae5625fa74f47d3515e4b6b3abb5fea186bfcd36671d1efd509c77cd43",
+      "trajectory_sha256": "78fc754f0797097a0dc2967a726e3c2fcf6fa624d61f05abfceb19aed0926c50",
+      "calls": 1,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-gui-responsive",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "bbb4bfc2f8505654d7c3c99105c51004e260fafac4ee99c7daa4d04eda3968c7",
+      "calls": 3,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-gui-parent-recovery",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "d3b430473d55fd35f1c8a35dd06ec273c55d92a437a93527dd3447b914cc4cbe",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-gui-cycle-rejection",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "da14efdcc0665c7af1624674b3e8df66f5772749c68a70c3b81989a00b71e622",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-gui-preserve-edited-script",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "5e536a5f6aaa0e00f6d787aaf30c977126abcedec4c17e2b63c7b33374db8039",
+      "calls": 4,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-gui-delete-retains-edit",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "7c30fe70901f8ff694b1835e9fef518fb678e2ca30ded5825672546a3d2066e4",
+      "calls": 5,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-mesh-create",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "92d0317044f994071c541f9666c343708579daeafdbe22aefa865da1e74bafe8",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-mesh-size-recovery",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "e4ee2479959bf82e9683196d3851595eee0d54427b9d175b38e308754dfc9dc9",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-mesh-duplicate-id",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "73fce947bba47bf38e7407b5f6e12c6929bedcab867439b0bbdc551e8aa1bb92",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-creation-kind-conflict",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "dfae51180e76d0cd03f83e2fed1e672e56237a30f2a5a1fe1dac44c3d2ac80d8",
+      "calls": 3,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-read-rig-knees",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "59cdc1511b43a4d7f521e651903b4038e9848bba9f22dac644f58fc19011ecfc",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-animation-create",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "77fe6e5792c889304d348499cf0107a916dde95c9d6fdcbcdb2978092e3b8d2a",
+      "calls": 3,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-r6-unknown-knee",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "71a7b2dafcd65332c8ac9ceba61cc3eefef133308c8f96ef8e1e3b46fbae7132",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-keyframe-time-order",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "bdec8888e933a00deac50249437a1b686cf45930a297187baf796795dc5f22bf",
+      "calls": 3,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-keyframe-zero-based",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "3ae0cf699ea1c8f092c02b27c03b45a044e26939a43aec58601a613709059d2d",
+      "calls": 3,
+      "passed": true
+    },
+    {
+      "id": "citrus-v4-tool-finish-draft-only",
+      "environment": "isolated_citrus_draft_engine",
+      "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+      "fixture_sha256": "3660776862d11b2f1724f1af890232710f1b1343e4afa60d5c0a3aac64502ba6",
+      "trajectory_sha256": "b570e8d5163db6f7e3c998db9485ff79c62f21f850c17e078828df41fdb54b27",
+      "calls": 3,
+      "passed": true
+    }
+  ]
+}

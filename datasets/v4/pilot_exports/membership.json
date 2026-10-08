@@ -1,0 +1,702 @@
+[
+  {
+    "id": "citrus-v4-authored-0001",
+    "family": "intent_context/context-contract",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "intent_context"
+  },
+  {
+    "id": "citrus-v4-authored-0002",
+    "family": "intent_context/ui-scope-followup",
+    "split": "validation",
+    "kind": "practice",
+    "category": "intent_context"
+  },
+  {
+    "id": "citrus-v4-authored-0003",
+    "family": "intent_context/missing-door-target",
+    "split": "test",
+    "kind": "practice",
+    "category": "intent_context"
+  },
+  {
+    "id": "citrus-v4-authored-0004",
+    "family": "intent_context/rig-scope-change",
+    "split": "train",
+    "kind": "practice",
+    "category": "intent_context"
+  },
+  {
+    "id": "citrus-v4-authored-0005",
+    "family": "intent_context/clarification-vs-assumption",
+    "split": "validation",
+    "kind": "knowledge",
+    "category": "intent_context"
+  },
+  {
+    "id": "citrus-v4-authored-0006",
+    "family": "mode_scope/plan-boundary",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "mode_scope"
+  },
+  {
+    "id": "citrus-v4-authored-0007",
+    "family": "mode_scope/plan-inspect-request",
+    "split": "test",
+    "kind": "practice",
+    "category": "mode_scope"
+  },
+  {
+    "id": "citrus-v4-authored-0008",
+    "family": "mode_scope/explicit-no-geometry-change",
+    "split": "train",
+    "kind": "practice",
+    "category": "mode_scope"
+  },
+  {
+    "id": "citrus-v4-authored-0009",
+    "family": "mode_scope/file-comment-instruction",
+    "split": "train",
+    "kind": "practice",
+    "category": "mode_scope"
+  },
+  {
+    "id": "citrus-v4-authored-0010",
+    "family": "mode_scope/tool-retry-budget",
+    "split": "train",
+    "kind": "practice",
+    "category": "mode_scope"
+  },
+  {
+    "id": "citrus-v4-authored-0011",
+    "family": "project_structure/placement-boundaries",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "project_structure"
+  },
+  {
+    "id": "citrus-v4-authored-0012",
+    "family": "project_structure/secret-in-shared",
+    "split": "train",
+    "kind": "practice",
+    "category": "project_structure"
+  },
+  {
+    "id": "citrus-v4-authored-0013",
+    "family": "project_structure/playergui-copy",
+    "split": "train",
+    "kind": "practice",
+    "category": "project_structure"
+  },
+  {
+    "id": "citrus-v4-authored-0014",
+    "family": "project_structure/ambiguous-recursive-find",
+    "split": "train",
+    "kind": "practice",
+    "category": "project_structure"
+  },
+  {
+    "id": "citrus-v4-authored-0015",
+    "family": "shared/rename-references",
+    "split": "train",
+    "kind": "practice",
+    "category": "project_structure"
+  },
+  {
+    "id": "citrus-v4-authored-0016",
+    "family": "luau/static-runtime",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "luau"
+  },
+  {
+    "id": "citrus-v4-authored-0017",
+    "family": "luau/table-cloning",
+    "split": "test",
+    "kind": "knowledge",
+    "category": "luau"
+  },
+  {
+    "id": "citrus-v4-authored-0018",
+    "family": "luau/optional-default",
+    "split": "train",
+    "kind": "practice",
+    "category": "luau"
+  },
+  {
+    "id": "citrus-v4-authored-0019",
+    "family": "luau/stable-filter",
+    "split": "train",
+    "kind": "practice",
+    "category": "luau"
+  },
+  {
+    "id": "citrus-v4-authored-0020",
+    "family": "luau/finite-integer-validator",
+    "split": "train",
+    "kind": "practice",
+    "category": "luau"
+  },
+  {
+    "id": "citrus-v4-authored-0021",
+    "family": "game_systems/game-state-contract",
+    "split": "test",
+    "kind": "knowledge",
+    "category": "game_systems"
+  },
+  {
+    "id": "citrus-v4-authored-0022",
+    "family": "game_systems/failed-load-vs-new-user",
+    "split": "train",
+    "kind": "practice",
+    "category": "game_systems"
+  },
+  {
+    "id": "citrus-v4-authored-0023",
+    "family": "game_systems/separate-door-role",
+    "split": "train",
+    "kind": "practice",
+    "category": "game_systems"
+  },
+  {
+    "id": "citrus-v4-authored-0024",
+    "family": "game_systems/quest-duplicate-claim",
+    "split": "train",
+    "kind": "practice",
+    "category": "game_systems"
+  },
+  {
+    "id": "citrus-v4-authored-0025",
+    "family": "game_systems/spawn-race",
+    "split": "train",
+    "kind": "practice",
+    "category": "game_systems"
+  },
+  {
+    "id": "citrus-v4-authored-0026",
+    "family": "world_physics/part-purpose",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "world_physics"
+  },
+  {
+    "id": "citrus-v4-authored-0027",
+    "family": "world_physics/room-expansion",
+    "split": "train",
+    "kind": "practice",
+    "category": "world_physics"
+  },
+  {
+    "id": "citrus-v4-authored-0028",
+    "family": "world_physics/anchored-assembly",
+    "split": "train",
+    "kind": "practice",
+    "category": "world_physics"
+  },
+  {
+    "id": "citrus-v4-authored-0029",
+    "family": "world_physics/collision-decor",
+    "split": "test",
+    "kind": "practice",
+    "category": "world_physics"
+  },
+  {
+    "id": "citrus-v4-authored-0030",
+    "family": "world_physics/pivot-move",
+    "split": "train",
+    "kind": "practice",
+    "category": "world_physics"
+  },
+  {
+    "id": "citrus-v4-authored-0031",
+    "family": "mesh_assets/mesh-budget",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "mesh_assets"
+  },
+  {
+    "id": "citrus-v4-authored-0032",
+    "family": "mesh_assets/unsupported-topology",
+    "split": "train",
+    "kind": "practice",
+    "category": "mesh_assets"
+  },
+  {
+    "id": "citrus-v4-authored-0033",
+    "family": "mesh_assets/collision-proxy",
+    "split": "train",
+    "kind": "practice",
+    "category": "mesh_assets"
+  },
+  {
+    "id": "citrus-v4-authored-0034",
+    "family": "mesh_assets/mesh-scale",
+    "split": "train",
+    "kind": "practice",
+    "category": "mesh_assets"
+  },
+  {
+    "id": "citrus-v4-authored-0035",
+    "family": "mesh_assets/unknown-asset-source",
+    "split": "validation",
+    "kind": "practice",
+    "category": "mesh_assets"
+  },
+  {
+    "id": "citrus-v4-authored-0036",
+    "family": "ui/responsive-ui",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "ui"
+  },
+  {
+    "id": "citrus-v4-authored-0037",
+    "family": "ui/layout-vs-tween",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "ui"
+  },
+  {
+    "id": "citrus-v4-authored-0038",
+    "family": "ui/text-jitter",
+    "split": "train",
+    "kind": "practice",
+    "category": "ui"
+  },
+  {
+    "id": "citrus-v4-authored-0039",
+    "family": "ui/pending-request",
+    "split": "train",
+    "kind": "practice",
+    "category": "ui"
+  },
+  {
+    "id": "citrus-v4-authored-0040",
+    "family": "ui/rapid-toggle-tween",
+    "split": "train",
+    "kind": "practice",
+    "category": "ui"
+  },
+  {
+    "id": "citrus-v4-authored-0041",
+    "family": "shared/rig-knee-structure",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "animation"
+  },
+  {
+    "id": "citrus-v4-authored-0042",
+    "family": "animation/track-lifecycle",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "animation"
+  },
+  {
+    "id": "citrus-v4-authored-0043",
+    "family": "shared/rig-knee-structure",
+    "split": "train",
+    "kind": "practice",
+    "category": "animation"
+  },
+  {
+    "id": "citrus-v4-authored-0044",
+    "family": "animation/foot-slide",
+    "split": "train",
+    "kind": "practice",
+    "category": "animation"
+  },
+  {
+    "id": "citrus-v4-authored-0045",
+    "family": "shared/animation-timeline",
+    "split": "train",
+    "kind": "practice",
+    "category": "animation"
+  },
+  {
+    "id": "citrus-v4-authored-0046",
+    "family": "tool_calling/tool-result-contract",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "tool_calling"
+  },
+  {
+    "id": "citrus-v4-authored-0047",
+    "family": "shared/structure-not-runtime",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "tool_calling"
+  },
+  {
+    "id": "citrus-v4-authored-0048",
+    "family": "shared/patch-lifecycle",
+    "split": "train",
+    "kind": "practice",
+    "category": "tool_calling"
+  },
+  {
+    "id": "citrus-v4-authored-0049",
+    "family": "shared/create-recovery",
+    "split": "train",
+    "kind": "practice",
+    "category": "tool_calling"
+  },
+  {
+    "id": "citrus-v4-authored-0050",
+    "family": "tool_calling/no-studio-tool",
+    "split": "train",
+    "kind": "practice",
+    "category": "tool_calling"
+  },
+  {
+    "id": "citrus-v4-authored-0051",
+    "family": "debugging/debug-evidence",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "debugging"
+  },
+  {
+    "id": "citrus-v4-authored-0052",
+    "family": "debugging/replication-nil",
+    "split": "train",
+    "kind": "practice",
+    "category": "debugging"
+  },
+  {
+    "id": "citrus-v4-authored-0053",
+    "family": "debugging/respawn-stale",
+    "split": "train",
+    "kind": "practice",
+    "category": "debugging"
+  },
+  {
+    "id": "citrus-v4-authored-0054",
+    "family": "debugging/false-default",
+    "split": "test",
+    "kind": "practice",
+    "category": "debugging"
+  },
+  {
+    "id": "citrus-v4-authored-0055",
+    "family": "debugging/cyclic-require",
+    "split": "train",
+    "kind": "practice",
+    "category": "debugging"
+  },
+  {
+    "id": "citrus-v4-authored-0056",
+    "family": "performance/profile-first",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "performance"
+  },
+  {
+    "id": "citrus-v4-authored-0057",
+    "family": "performance/event-driven-counter",
+    "split": "test",
+    "kind": "practice",
+    "category": "performance"
+  },
+  {
+    "id": "citrus-v4-authored-0058",
+    "family": "performance/connection-leak",
+    "split": "train",
+    "kind": "practice",
+    "category": "performance"
+  },
+  {
+    "id": "citrus-v4-authored-0059",
+    "family": "performance/bounded-npc-work",
+    "split": "train",
+    "kind": "practice",
+    "category": "performance"
+  },
+  {
+    "id": "citrus-v4-authored-0060",
+    "family": "performance/queue-head-index",
+    "split": "train",
+    "kind": "practice",
+    "category": "performance"
+  },
+  {
+    "id": "citrus-v4-authored-0061",
+    "family": "security/remote-validation",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "security"
+  },
+  {
+    "id": "citrus-v4-authored-0062",
+    "family": "security/client-cooldown",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "security"
+  },
+  {
+    "id": "citrus-v4-authored-0063",
+    "family": "security/fake-service",
+    "split": "validation",
+    "kind": "practice",
+    "category": "security"
+  },
+  {
+    "id": "citrus-v4-authored-0064",
+    "family": "security/instance-ownership",
+    "split": "train",
+    "kind": "practice",
+    "category": "security"
+  },
+  {
+    "id": "citrus-v4-authored-0065",
+    "family": "security/nan-range",
+    "split": "train",
+    "kind": "practice",
+    "category": "security"
+  },
+  {
+    "id": "citrus-v4-authored-0066",
+    "family": "shared/structure-not-runtime",
+    "split": "train",
+    "kind": "knowledge",
+    "category": "verification"
+  },
+  {
+    "id": "citrus-v4-authored-0067",
+    "family": "verification/dataset-target-vs-actual",
+    "split": "test",
+    "kind": "practice",
+    "category": "verification"
+  },
+  {
+    "id": "citrus-v4-authored-0068",
+    "family": "verification/near-duplicate-count",
+    "split": "train",
+    "kind": "practice",
+    "category": "verification"
+  },
+  {
+    "id": "citrus-v4-authored-0069",
+    "family": "verification/door-regression",
+    "split": "train",
+    "kind": "practice",
+    "category": "verification"
+  },
+  {
+    "id": "citrus-v4-authored-0070",
+    "family": "shared/structure-not-runtime",
+    "split": "train",
+    "kind": "practice",
+    "category": "verification"
+  },
+  {
+    "id": "citrus-v4-tool-create-script",
+    "family": "shared/create-recovery",
+    "split": "train",
+    "kind": "practice",
+    "category": "tool_calling"
+  },
+  {
+    "id": "citrus-v4-tool-patch-unique",
+    "family": "shared/patch-lifecycle",
+    "split": "train",
+    "kind": "practice",
+    "category": "tool_calling"
+  },
+  {
+    "id": "citrus-v4-tool-patch-ambiguity",
+    "family": "shared/patch-lifecycle",
+    "split": "train",
+    "kind": "practice",
+    "category": "debugging"
+  },
+  {
+    "id": "citrus-v4-tool-stale-patch",
+    "family": "shared/patch-lifecycle",
+    "split": "train",
+    "kind": "practice",
+    "category": "debugging"
+  },
+  {
+    "id": "citrus-v4-tool-duplicate-path",
+    "family": "shared/create-recovery",
+    "split": "train",
+    "kind": "practice",
+    "category": "tool_calling"
+  },
+  {
+    "id": "citrus-v4-tool-rename-references",
+    "family": "shared/rename-references",
+    "split": "train",
+    "kind": "practice",
+    "category": "project_structure"
+  },
+  {
+    "id": "citrus-v4-tool-rename-collision",
+    "family": "shared/rename-references",
+    "split": "train",
+    "kind": "practice",
+    "category": "project_structure"
+  },
+  {
+    "id": "citrus-v4-tool-delete-read-first",
+    "family": "shared/delete-coverage",
+    "split": "train",
+    "kind": "practice",
+    "category": "tool_calling"
+  },
+  {
+    "id": "citrus-v4-tool-partial-delete",
+    "family": "shared/delete-coverage",
+    "split": "train",
+    "kind": "practice",
+    "category": "tool_calling"
+  },
+  {
+    "id": "citrus-v4-tool-read-reset-on-change",
+    "family": "shared/delete-coverage",
+    "split": "train",
+    "kind": "practice",
+    "category": "tool_calling"
+  },
+  {
+    "id": "citrus-v4-tool-literal-search",
+    "family": "tool-fixture/literal-search",
+    "split": "train",
+    "kind": "practice",
+    "category": "project_structure"
+  },
+  {
+    "id": "citrus-v4-tool-prefix-list",
+    "family": "tool-fixture/prefix-list",
+    "split": "train",
+    "kind": "practice",
+    "category": "project_structure"
+  },
+  {
+    "id": "citrus-v4-tool-plan-single-active",
+    "family": "tool-fixture/plan-single-active",
+    "split": "test",
+    "kind": "practice",
+    "category": "tool_calling"
+  },
+  {
+    "id": "citrus-v4-tool-finish-boundary",
+    "family": "shared/structure-not-runtime",
+    "split": "train",
+    "kind": "practice",
+    "category": "verification"
+  },
+  {
+    "id": "citrus-v4-tool-schema-is-not-syntax",
+    "family": "shared/structure-not-runtime",
+    "split": "train",
+    "kind": "practice",
+    "category": "verification"
+  },
+  {
+    "id": "citrus-v4-tool-gui-responsive",
+    "family": "tool-fixture/gui-responsive",
+    "split": "train",
+    "kind": "practice",
+    "category": "ui"
+  },
+  {
+    "id": "citrus-v4-tool-gui-parent-recovery",
+    "family": "shared/gui-parent-graph",
+    "split": "train",
+    "kind": "practice",
+    "category": "ui"
+  },
+  {
+    "id": "citrus-v4-tool-gui-cycle-rejection",
+    "family": "shared/gui-parent-graph",
+    "split": "train",
+    "kind": "practice",
+    "category": "ui"
+  },
+  {
+    "id": "citrus-v4-tool-gui-preserve-edited-script",
+    "family": "shared/gui-manual-edits",
+    "split": "train",
+    "kind": "practice",
+    "category": "ui"
+  },
+  {
+    "id": "citrus-v4-tool-gui-delete-retains-edit",
+    "family": "shared/gui-manual-edits",
+    "split": "train",
+    "kind": "practice",
+    "category": "ui"
+  },
+  {
+    "id": "citrus-v4-tool-mesh-create",
+    "family": "tool-fixture/mesh-create",
+    "split": "train",
+    "kind": "practice",
+    "category": "mesh_assets"
+  },
+  {
+    "id": "citrus-v4-tool-mesh-size-recovery",
+    "family": "tool-fixture/mesh-size-recovery",
+    "split": "train",
+    "kind": "practice",
+    "category": "mesh_assets"
+  },
+  {
+    "id": "citrus-v4-tool-mesh-duplicate-id",
+    "family": "tool-fixture/mesh-duplicate-id",
+    "split": "train",
+    "kind": "practice",
+    "category": "mesh_assets"
+  },
+  {
+    "id": "citrus-v4-tool-creation-kind-conflict",
+    "family": "tool-fixture/creation-kind-conflict",
+    "split": "train",
+    "kind": "practice",
+    "category": "mesh_assets"
+  },
+  {
+    "id": "citrus-v4-tool-read-rig-knees",
+    "family": "shared/rig-knee-structure",
+    "split": "train",
+    "kind": "practice",
+    "category": "animation"
+  },
+  {
+    "id": "citrus-v4-tool-animation-create",
+    "family": "shared/animation-timeline",
+    "split": "train",
+    "kind": "practice",
+    "category": "animation"
+  },
+  {
+    "id": "citrus-v4-tool-r6-unknown-knee",
+    "family": "shared/rig-knee-structure",
+    "split": "train",
+    "kind": "practice",
+    "category": "animation"
+  },
+  {
+    "id": "citrus-v4-tool-keyframe-time-order",
+    "family": "shared/animation-timeline",
+    "split": "train",
+    "kind": "practice",
+    "category": "animation"
+  },
+  {
+    "id": "citrus-v4-tool-keyframe-zero-based",
+    "family": "shared/animation-timeline",
+    "split": "train",
+    "kind": "practice",
+    "category": "animation"
+  },
+  {
+    "id": "citrus-v4-tool-finish-draft-only",
+    "family": "shared/structure-not-runtime",
+    "split": "train",
+    "kind": "practice",
+    "category": "verification"
+  }
+]

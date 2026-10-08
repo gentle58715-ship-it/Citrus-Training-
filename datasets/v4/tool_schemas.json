@@ -1,0 +1,695 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "get_project_info",
+      "description": "Read project metadata, allowed roots and capabilities. No Studio runtime is available.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "list_files",
+      "description": "List draft script paths, classes, line counts and sizes without source.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "prefix": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "read_file",
+      "description": "Read a draft file using optional 1-based inclusive line range. Large results are paginated.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "start_line": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "end_line": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "path"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "search_code",
+      "description": "Literal substring search across draft scripts. Returns bounded matches with line numbers.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "case_sensitive": {
+            "type": "boolean"
+          },
+          "prefix": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "update_plan",
+      "description": "Set a concise task plan and statuses for the user. Do not include hidden reasoning.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "step": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "pending",
+                    "in_progress",
+                    "completed"
+                  ]
+                }
+              },
+              "required": [
+                "step",
+                "status"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "steps"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "create_file",
+      "description": "Create a new draft script. Existing paths are rejected.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "className": {
+            "type": "string",
+            "enum": [
+              "Script",
+              "LocalScript",
+              "ModuleScript"
+            ]
+          },
+          "source": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path",
+          "className",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "patch_file",
+      "description": "Replace exactly one occurrence of old_text in a draft file. Read current source first; ambiguous or stale text is rejected.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "old_text": {
+            "type": "string"
+          },
+          "new_text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path",
+          "old_text",
+          "new_text"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "rename_file",
+      "description": "Move or rename a draft script; does not automatically rewrite references.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "new_path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path",
+          "new_path"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "delete_file",
+      "description": "Remove a draft script. Read its current content before deletion.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "check_project",
+      "description": "Validate paths, classes, duplicate paths and size. This is NOT Luau syntax validation or execution.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_changes",
+      "description": "List added, modified and deleted paths compared with the original snapshot.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "finish_proposal",
+      "description": "Finish the task and stage the current draft for user review. Runs schema checks; never applies live changes.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "summary"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "read_version",
+      "description": "List saved versions, or read one saved file/creation snapshot by id and optional path. Read only; never restores automatically.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "read_rig",
+      "description": "Read the standard R6 or R15 joint hierarchy and pose conventions. Not a live Studio rig.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "rig": {
+            "type": "string",
+            "enum": [
+              "R6",
+              "R15"
+            ]
+          }
+        },
+        "required": [
+          "rig"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "create_gui",
+      "description": "Create or replace a GUI draft by id and generate its StarterGui LocalScript. Nodes use Roblox UDim2 arrays; buttons with toggleTarget toggle another node, others log clicks only. Read existing creation before replacing.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "nodes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "parent": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "Frame",
+                    "TextLabel",
+                    "TextButton",
+                    "ScrollingFrame"
+                  ]
+                },
+                "size": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "position": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "anchor": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "color": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "textColor": {
+                  "type": "string"
+                },
+                "fontSize": {
+                  "type": "number"
+                },
+                "corner": {
+                  "type": "number"
+                },
+                "visible": {
+                  "type": "boolean"
+                },
+                "transparent": {
+                  "type": "boolean"
+                },
+                "zIndex": {
+                  "type": "integer"
+                },
+                "toggleTarget": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "type",
+                "size",
+                "position"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "nodes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "create_mesh",
+      "description": "Create or replace a procedural mesh assembly by id. Six declared shapes only; size in studs, rotation in degrees. WebGL preview and OBJ/MTL export are available. No arbitrary topology, texture generation, rigging or Studio testing.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "parts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "shape": {
+                  "type": "string",
+                  "enum": [
+                    "box",
+                    "rounded_box",
+                    "cylinder",
+                    "sphere",
+                    "cone",
+                    "torus"
+                  ]
+                },
+                "size": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 3,
+                  "maxItems": 3
+                },
+                "position": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 3,
+                  "maxItems": 3
+                },
+                "rotation": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 3,
+                  "maxItems": 3
+                },
+                "color": {
+                  "type": "string"
+                },
+                "segments": {
+                  "type": "integer"
+                },
+                "roundness": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "id",
+                "shape",
+                "size"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "parts"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "create_animation",
+      "description": "Create or replace an R6/R15 animation draft. Use read_rig for joint names. frames start at zero, times strictly increase; poses are local position offsets and XYZ rotation in degrees; omitted poses are identity. Linear preview and KeyframeSequence builder export. No upload or Studio test.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "rig": {
+            "type": "string",
+            "enum": [
+              "R6",
+              "R15"
+            ]
+          },
+          "loop": {
+            "type": "boolean"
+          },
+          "frames": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "time": {
+                  "type": "number"
+                },
+                "poses": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "joint": {
+                        "type": "string"
+                      },
+                      "position": {
+                        "type": "array",
+                        "items": {
+                          "type": "number"
+                        },
+                        "minItems": 3,
+                        "maxItems": 3
+                      },
+                      "rotation": {
+                        "type": "array",
+                        "items": {
+                          "type": "number"
+                        },
+                        "minItems": 3,
+                        "maxItems": 3
+                      }
+                    },
+                    "required": [
+                      "joint"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "time",
+                "poses"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "rig",
+          "frames"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "read_creation",
+      "description": "Read GUI nodes, mesh parts or animation keyframes from the current draft.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "delete_creation",
+      "description": "Delete a draft creation; preserve any manually edited GUI script.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "patch_keyframe",
+      "description": "Replace one zero-based animation keyframe and validate the complete animation atomically.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "frame_index": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "frame": {
+            "type": "object",
+            "properties": {
+              "time": {
+                "type": "number"
+              },
+              "poses": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "joint": {
+                      "type": "string"
+                    },
+                    "position": {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      },
+                      "minItems": 3,
+                      "maxItems": 3
+                    },
+                    "rotation": {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      },
+                      "minItems": 3,
+                      "maxItems": 3
+                    }
+                  },
+                  "required": [
+                    "joint"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "time",
+              "poses"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "frame_index",
+          "frame"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "checked_on": "2026-10-08",
+  "runtime": "current workspace",
+  "cuda_available": false,
+  "torch_installed": false,
+  "transformers_installed": false,
+  "attempted_limit": 1,
+  "new_model_generated_records": 0,
+  "exit_code": 2,
+  "error": "Generation runtime is absent; use the supplied GPU notebook. No data was generated.",
+  "paid_api_called": false
+}

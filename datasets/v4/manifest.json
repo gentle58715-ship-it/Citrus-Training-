@@ -1,0 +1,26 @@
+{
+  "version": "v4-60k",
+  "status": "reviewed_pilot_generation_runtime_required",
+  "target_total": 60000,
+  "target_counts": {
+    "knowledge": 12000,
+    "practice": 48000
+  },
+  "actual_counts": {
+    "knowledge": 20,
+    "practice": 80,
+    "total": 100
+  },
+  "approved_total": 100,
+  "remaining_to_approve": 59900,
+  "target_complete": false,
+  "roblox_studio_executed": false,
+  "tool_execution_records": 30,
+  "pure_luau_runtime_records": 5,
+  "review_scope": "Codex author/editor review; not independent human evaluation",
+  "generation_started": false,
+  "background_job_started": false,
+  "category_config": "config.json",
+  "audit_report": "reports/audit.json",
+  "partial_export_manifest": "pilot_exports/export_manifest.json"
+}
