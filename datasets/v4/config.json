@@ -1,0 +1,301 @@
+{
+  "version": "v4-60k",
+  "target_total": 60000,
+  "target_counts": {
+    "knowledge": 12000,
+    "practice": 48000
+  },
+  "categories": [
+    {
+      "id": "intent_context",
+      "name_th": "เข้าใจคำสั่งและบริบท",
+      "total": 6000,
+      "knowledge": 1200,
+      "practice": 4800,
+      "sources": [
+        "intent"
+      ],
+      "topics": [
+        "follow-up references",
+        "scope changes",
+        "missing context",
+        "Thai-English requests"
+      ]
+    },
+    {
+      "id": "mode_scope",
+      "name_th": "พฤติกรรมและโหมด Citrus",
+      "total": 4000,
+      "knowledge": 800,
+      "practice": 3200,
+      "sources": [
+        "modes"
+      ],
+      "topics": [
+        "Plan without tools",
+        "authorization scope",
+        "untrusted file instructions",
+        "tool budget"
+      ]
+    },
+    {
+      "id": "project_structure",
+      "name_th": "อ่านโครงสร้างโปรเจกต์",
+      "total": 4000,
+      "knowledge": 800,
+      "practice": 3200,
+      "sources": [
+        "structure",
+        "tools"
+      ],
+      "topics": [
+        "hierarchy lookup",
+        "script placement",
+        "replication",
+        "ambiguous targets"
+      ]
+    },
+    {
+      "id": "luau",
+      "name_th": "Luau และโครงสร้างโค้ด",
+      "total": 9000,
+      "knowledge": 1800,
+      "practice": 7200,
+      "sources": [
+        "luau_types",
+        "luau_library"
+      ],
+      "topics": [
+        "optional types",
+        "table aliasing",
+        "pure functions",
+        "finite numbers",
+        "module contracts"
+      ]
+    },
+    {
+      "id": "game_systems",
+      "name_th": "ระบบเกม",
+      "total": 5000,
+      "knowledge": 1000,
+      "practice": 4000,
+      "sources": [
+        "gameplay_security",
+        "datastore"
+      ],
+      "topics": [
+        "inventory transactions",
+        "quest states",
+        "spawns",
+        "keycard access",
+        "save failure"
+      ]
+    },
+    {
+      "id": "world_physics",
+      "name_th": "สร้างแมพและฟิสิกส์",
+      "total": 5000,
+      "knowledge": 1000,
+      "practice": 4000,
+      "sources": [
+        "world",
+        "collision"
+      ],
+      "topics": [
+        "room dimensions",
+        "pivot transforms",
+        "collision groups",
+        "constraints",
+        "multiplayer routes"
+      ]
+    },
+    {
+      "id": "mesh_assets",
+      "name_th": "Mesh และโมเดล 3D",
+      "total": 3000,
+      "knowledge": 600,
+      "practice": 2400,
+      "sources": [
+        "mesh",
+        "tools"
+      ],
+      "topics": [
+        "silhouette",
+        "polygon budget",
+        "collision geometry",
+        "supported shape limits",
+        "asset provenance"
+      ]
+    },
+    {
+      "id": "ui",
+      "name_th": "UI และการโต้ตอบ",
+      "total": 4000,
+      "knowledge": 800,
+      "practice": 3200,
+      "sources": [
+        "ui",
+        "layouts"
+      ],
+      "topics": [
+        "Scale responsive layout",
+        "wrapping",
+        "button cleanup",
+        "tween interruption",
+        "pending states"
+      ]
+    },
+    {
+      "id": "animation",
+      "name_th": "Rig และแอนิเมชัน",
+      "total": 4000,
+      "knowledge": 800,
+      "practice": 3200,
+      "sources": [
+        "animation",
+        "tools"
+      ],
+      "topics": [
+        "R6 vs R15",
+        "local joint axes",
+        "track lifecycle",
+        "loop seams",
+        "priority blending"
+      ]
+    },
+    {
+      "id": "tool_calling",
+      "name_th": "เรียกใช้เครื่องมือ",
+      "total": 7000,
+      "knowledge": 1400,
+      "practice": 5600,
+      "sources": [
+        "tools",
+        "verification"
+      ],
+      "topics": [
+        "read before patch",
+        "schema arguments",
+        "error recovery",
+        "result evidence",
+        "draft boundaries"
+      ]
+    },
+    {
+      "id": "debugging",
+      "name_th": "Debug และแก้ไขงานเดิม",
+      "total": 3000,
+      "knowledge": 600,
+      "practice": 2400,
+      "sources": [
+        "debug",
+        "structure",
+        "tools"
+      ],
+      "topics": [
+        "stack trace",
+        "nil references",
+        "replication timing",
+        "respawn state",
+        "minimal patch"
+      ]
+    },
+    {
+      "id": "performance",
+      "name_th": "ประสิทธิภาพและหน่วยความจำ",
+      "total": 2000,
+      "knowledge": 400,
+      "practice": 1600,
+      "sources": [
+        "performance",
+        "task"
+      ],
+      "topics": [
+        "profiling",
+        "event driven updates",
+        "connection cleanup",
+        "bounded work",
+        "allocation"
+      ]
+    },
+    {
+      "id": "security",
+      "name_th": "ความปลอดภัยของเกม",
+      "total": 2000,
+      "knowledge": 400,
+      "practice": 1600,
+      "sources": [
+        "gameplay_security"
+      ],
+      "topics": [
+        "server authority",
+        "rate limits",
+        "NaN",
+        "ownership",
+        "request replay"
+      ]
+    },
+    {
+      "id": "verification",
+      "name_th": "ตรวจสอบและรายงานผล",
+      "total": 2000,
+      "knowledge": 400,
+      "practice": 1600,
+      "sources": [
+        "verification",
+        "tools"
+      ],
+      "topics": [
+        "proof scope",
+        "structural vs runtime",
+        "regression cases",
+        "honest reporting",
+        "dataset quality"
+      ]
+    }
+  ],
+  "split_policy": {
+    "group_by": "family_id",
+    "train_percent": 80,
+    "validation_percent": 10,
+    "test_percent": 10,
+    "exact_sizes_guaranteed": false
+  },
+  "raw_documentation_allowed": false,
+  "numeric_or_name_variants_are_diversity": false,
+  "generation_model_fixed": false,
+  "training_model_fixed": false,
+  "family_aliases": {
+    "tool-fixture/patch-unique": "shared/patch-lifecycle",
+    "tool-fixture/patch-ambiguity": "shared/patch-lifecycle",
+    "tool-fixture/stale-patch": "shared/patch-lifecycle",
+    "tool_calling/ambiguous-patch": "shared/patch-lifecycle",
+    "tool-fixture/create-script": "shared/create-recovery",
+    "tool-fixture/duplicate-path": "shared/create-recovery",
+    "tool_calling/uncertain-timeout": "shared/create-recovery",
+    "tool-fixture/delete-read-first": "shared/delete-coverage",
+    "tool-fixture/partial-delete": "shared/delete-coverage",
+    "tool-fixture/read-reset-on-change": "shared/delete-coverage",
+    "tool-fixture/rename-references": "shared/rename-references",
+    "tool-fixture/rename-collision": "shared/rename-references",
+    "project_structure/rename-reference": "shared/rename-references",
+    "tool-fixture/gui-parent-recovery": "shared/gui-parent-graph",
+    "tool-fixture/gui-cycle-rejection": "shared/gui-parent-graph",
+    "tool-fixture/gui-preserve-edited-script": "shared/gui-manual-edits",
+    "tool-fixture/gui-delete-retains-edit": "shared/gui-manual-edits",
+    "tool-fixture/read-rig-knees": "shared/rig-knee-structure",
+    "tool-fixture/r6-unknown-knee": "shared/rig-knee-structure",
+    "animation/rig-compatible-animation": "shared/rig-knee-structure",
+    "animation/knee-r6": "shared/rig-knee-structure",
+    "tool-fixture/animation-create": "shared/animation-timeline",
+    "tool-fixture/keyframe-time-order": "shared/animation-timeline",
+    "tool-fixture/keyframe-zero-based": "shared/animation-timeline",
+    "animation/loop-seam": "shared/animation-timeline",
+    "tool-fixture/schema-is-not-syntax": "shared/structure-not-runtime",
+    "tool-fixture/finish-draft-only": "shared/structure-not-runtime",
+    "tool-fixture/finish-boundary": "shared/structure-not-runtime",
+    "tool_calling/schema-vs-execution": "shared/structure-not-runtime",
+    "verification/structural-only-report": "shared/structure-not-runtime",
+    "verification/evidence-levels": "shared/structure-not-runtime"
+  }
+}

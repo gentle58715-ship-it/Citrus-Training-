@@ -1,0 +1,149 @@
+[
+  {
+    "id": "intent",
+    "url": null,
+    "type": "product_spec",
+    "anchor": "Use the supplied conversation and project context. Resolve missing critical targets before modifying them. Ask no question whose answer is already supplied.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "modes",
+    "url": null,
+    "type": "product_spec",
+    "anchor": "Citrus Plan mode never invokes tools or modifies files. Agent mode may use only supplied capabilities and the user-authorized task scope.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "structure",
+    "url": "https://create.roblox.com/docs/projects/data-model",
+    "type": "documentation",
+    "anchor": "ServerScriptService is server-side; ReplicatedStorage is visible to clients. Runtime PlayerGui differs from the StarterGui template. Inspect actual paths before editing.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "luau_types",
+    "url": "https://luau.org/types/",
+    "type": "documentation",
+    "anchor": "Luau supports optional and structural types. Static annotations help before execution but do not validate untrusted runtime data.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "luau_library",
+    "url": "https://luau.org/library/",
+    "type": "documentation",
+    "anchor": "Tables are references. A shallow table clone retains nested references. Check the intended numeric domain and finite bounds before using inputs.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "gameplay_security",
+    "url": "https://create.roblox.com/docs/scripting/security/client-server-boundary",
+    "type": "documentation",
+    "anchor": "Server validation covers input type, value, permission, state and request rate. A client-supplied price or reward is not authoritative.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "datastore",
+    "url": "https://create.roblox.com/docs/reference/engine/classes/GlobalDataStore",
+    "type": "documentation",
+    "anchor": "Distinguish a missing key from failed I/O. UpdateAsync callbacks cannot yield and may be retried; avoid irreversible side effects in the callback.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "world",
+    "url": "https://create.roblox.com/docs/parts",
+    "type": "documentation",
+    "anchor": "Choose anchored state and collision behavior according to the object purpose. Visual geometry and physical behavior are separate design decisions.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "collision",
+    "url": "https://create.roblox.com/docs/workspace/collisions",
+    "type": "documentation",
+    "anchor": "Collision groups control which classes of parts interact. A CanTouch choice and a CanCollide choice serve different requirements.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "mesh",
+    "url": "https://create.roblox.com/docs/art/modeling",
+    "type": "documentation",
+    "anchor": "Optimize the silhouette, material and collision geometry to the asset role. Asset complexity requires measurement; polygon count alone does not predict total cost.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "ui",
+    "url": "https://create.roblox.com/docs/ui/position-and-size",
+    "type": "documentation",
+    "anchor": "UDim2 combines Scale and Offset. Citrus favors Scale for responsive screen placement and size, while allowing intentional fixed details and bounds.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "layouts",
+    "url": "https://create.roblox.com/docs/ui/size-modifiers",
+    "type": "documentation",
+    "anchor": "Use constraints to retain proportions or bound sizes. Use UIListLayout/UIGridLayout when arranging repeated items, and test multiple aspect ratios.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "animation",
+    "url": "https://create.roblox.com/docs/reference/engine/classes/Animator",
+    "type": "documentation",
+    "anchor": "Load animation tracks through Animator. Track replication depends on where the Animator was created and who owns the character. Check actual rig and asset compatibility.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "tools",
+    "url": null,
+    "type": "owned_interface",
+    "anchor": "The inspected Citrus tool interface edits isolated drafts, not live Studio. create_mesh supports six procedural shapes. check_project checks structure but not Luau syntax or Roblox execution. read_rig is a schematic rig.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation.",
+    "source_repo": "gentle58715-ship-it/citrus-studio",
+    "source_revision": "0be3ed7c32d181512a50b90579efe2f217f01cdd",
+    "source_path": "lib/tools.ts"
+  },
+  {
+    "id": "debug",
+    "url": "https://create.roblox.com/docs/studio/output",
+    "type": "documentation",
+    "anchor": "Use the actual error and stack location with a minimal reproduction. An error disappearing once is insufficient evidence that the underlying race is resolved.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "performance",
+    "url": "https://create.roblox.com/docs/performance-optimization/improve",
+    "type": "documentation",
+    "anchor": "Profile a representative workload before choosing an optimization. Compare frame cost, network, physics and memory under the same conditions.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "task",
+    "url": "https://create.roblox.com/docs/reference/engine/libraries/task",
+    "type": "documentation",
+    "anchor": "The task library schedules execution. Scheduling work does not remove its CPU cost; loops, delayed callbacks and event connections need lifecycle ownership.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  },
+  {
+    "id": "verification",
+    "url": null,
+    "type": "product_spec",
+    "anchor": "Report only observed results and their scope. Synthetic fixtures and isolated draft-tool runs are not evidence of Roblox Studio execution. A requested dataset count is not a completed count.",
+    "retrieval_date": "2026-10-08",
+    "content_policy": "Original explanation only; do not copy raw documentation."
+  }
+]

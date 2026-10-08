@@ -1,0 +1,307 @@
+{
+  "target_total": 60000,
+  "actual_valid_candidates": 100,
+  "actual_counts": {
+    "knowledge": 20,
+    "practice": 80
+  },
+  "approved_total": 100,
+  "remaining_to_approve": 59900,
+  "completion": false,
+  "errors": [],
+  "warnings": [],
+  "category_counts": [
+    {
+      "id": "intent_context",
+      "name_th": "เข้าใจคำสั่งและบริบท",
+      "total": 6000,
+      "knowledge": 1200,
+      "practice": 4800,
+      "sources": [
+        "intent"
+      ],
+      "topics": [
+        "follow-up references",
+        "scope changes",
+        "missing context",
+        "Thai-English requests"
+      ],
+      "actual_knowledge": 2,
+      "actual_practice": 3
+    },
+    {
+      "id": "mode_scope",
+      "name_th": "พฤติกรรมและโหมด Citrus",
+      "total": 4000,
+      "knowledge": 800,
+      "practice": 3200,
+      "sources": [
+        "modes"
+      ],
+      "topics": [
+        "Plan without tools",
+        "authorization scope",
+        "untrusted file instructions",
+        "tool budget"
+      ],
+      "actual_knowledge": 1,
+      "actual_practice": 4
+    },
+    {
+      "id": "project_structure",
+      "name_th": "อ่านโครงสร้างโปรเจกต์",
+      "total": 4000,
+      "knowledge": 800,
+      "practice": 3200,
+      "sources": [
+        "structure",
+        "tools"
+      ],
+      "topics": [
+        "hierarchy lookup",
+        "script placement",
+        "replication",
+        "ambiguous targets"
+      ],
+      "actual_knowledge": 1,
+      "actual_practice": 8
+    },
+    {
+      "id": "luau",
+      "name_th": "Luau และโครงสร้างโค้ด",
+      "total": 9000,
+      "knowledge": 1800,
+      "practice": 7200,
+      "sources": [
+        "luau_types",
+        "luau_library"
+      ],
+      "topics": [
+        "optional types",
+        "table aliasing",
+        "pure functions",
+        "finite numbers",
+        "module contracts"
+      ],
+      "actual_knowledge": 2,
+      "actual_practice": 3
+    },
+    {
+      "id": "game_systems",
+      "name_th": "ระบบเกม",
+      "total": 5000,
+      "knowledge": 1000,
+      "practice": 4000,
+      "sources": [
+        "gameplay_security",
+        "datastore"
+      ],
+      "topics": [
+        "inventory transactions",
+        "quest states",
+        "spawns",
+        "keycard access",
+        "save failure"
+      ],
+      "actual_knowledge": 1,
+      "actual_practice": 4
+    },
+    {
+      "id": "world_physics",
+      "name_th": "สร้างแมพและฟิสิกส์",
+      "total": 5000,
+      "knowledge": 1000,
+      "practice": 4000,
+      "sources": [
+        "world",
+        "collision"
+      ],
+      "topics": [
+        "room dimensions",
+        "pivot transforms",
+        "collision groups",
+        "constraints",
+        "multiplayer routes"
+      ],
+      "actual_knowledge": 1,
+      "actual_practice": 4
+    },
+    {
+      "id": "mesh_assets",
+      "name_th": "Mesh และโมเดล 3D",
+      "total": 3000,
+      "knowledge": 600,
+      "practice": 2400,
+      "sources": [
+        "mesh",
+        "tools"
+      ],
+      "topics": [
+        "silhouette",
+        "polygon budget",
+        "collision geometry",
+        "supported shape limits",
+        "asset provenance"
+      ],
+      "actual_knowledge": 1,
+      "actual_practice": 8
+    },
+    {
+      "id": "ui",
+      "name_th": "UI และการโต้ตอบ",
+      "total": 4000,
+      "knowledge": 800,
+      "practice": 3200,
+      "sources": [
+        "ui",
+        "layouts"
+      ],
+      "topics": [
+        "Scale responsive layout",
+        "wrapping",
+        "button cleanup",
+        "tween interruption",
+        "pending states"
+      ],
+      "actual_knowledge": 2,
+      "actual_practice": 8
+    },
+    {
+      "id": "animation",
+      "name_th": "Rig และแอนิเมชัน",
+      "total": 4000,
+      "knowledge": 800,
+      "practice": 3200,
+      "sources": [
+        "animation",
+        "tools"
+      ],
+      "topics": [
+        "R6 vs R15",
+        "local joint axes",
+        "track lifecycle",
+        "loop seams",
+        "priority blending"
+      ],
+      "actual_knowledge": 2,
+      "actual_practice": 8
+    },
+    {
+      "id": "tool_calling",
+      "name_th": "เรียกใช้เครื่องมือ",
+      "total": 7000,
+      "knowledge": 1400,
+      "practice": 5600,
+      "sources": [
+        "tools",
+        "verification"
+      ],
+      "topics": [
+        "read before patch",
+        "schema arguments",
+        "error recovery",
+        "result evidence",
+        "draft boundaries"
+      ],
+      "actual_knowledge": 2,
+      "actual_practice": 10
+    },
+    {
+      "id": "debugging",
+      "name_th": "Debug และแก้ไขงานเดิม",
+      "total": 3000,
+      "knowledge": 600,
+      "practice": 2400,
+      "sources": [
+        "debug",
+        "structure",
+        "tools"
+      ],
+      "topics": [
+        "stack trace",
+        "nil references",
+        "replication timing",
+        "respawn state",
+        "minimal patch"
+      ],
+      "actual_knowledge": 1,
+      "actual_practice": 6
+    },
+    {
+      "id": "performance",
+      "name_th": "ประสิทธิภาพและหน่วยความจำ",
+      "total": 2000,
+      "knowledge": 400,
+      "practice": 1600,
+      "sources": [
+        "performance",
+        "task"
+      ],
+      "topics": [
+        "profiling",
+        "event driven updates",
+        "connection cleanup",
+        "bounded work",
+        "allocation"
+      ],
+      "actual_knowledge": 1,
+      "actual_practice": 4
+    },
+    {
+      "id": "security",
+      "name_th": "ความปลอดภัยของเกม",
+      "total": 2000,
+      "knowledge": 400,
+      "practice": 1600,
+      "sources": [
+        "gameplay_security"
+      ],
+      "topics": [
+        "server authority",
+        "rate limits",
+        "NaN",
+        "ownership",
+        "request replay"
+      ],
+      "actual_knowledge": 2,
+      "actual_practice": 3
+    },
+    {
+      "id": "verification",
+      "name_th": "ตรวจสอบและรายงานผล",
+      "total": 2000,
+      "knowledge": 400,
+      "practice": 1600,
+      "sources": [
+        "verification",
+        "tools"
+      ],
+      "topics": [
+        "proof scope",
+        "structural vs runtime",
+        "regression cases",
+        "honest reporting",
+        "dataset quality"
+      ],
+      "actual_knowledge": 1,
+      "actual_practice": 7
+    }
+  ],
+  "tool_execution_records": 30,
+  "runtime_verified_records": 5,
+  "grouped_families": 78,
+  "checks": [
+    "record structure",
+    "tool schemas and response pairing",
+    "Plan mode boundary",
+    "known bad APIs",
+    "exact duplicates",
+    "numeric-variant screening",
+    "approval hash"
+  ],
+  "limitations": [
+    "Numeric-variant screening is not semantic deduplication.",
+    "Syntax compilation does not prove Roblox runtime behavior.",
+    "Automated validation does not approve factual correctness."
+  ]
+}

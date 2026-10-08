@@ -1,0 +1,54 @@
+{
+  "records_tested": 5,
+  "all_passed": true,
+  "runtime": "luau-web 1.5.0",
+  "roblox_studio_executed": false,
+  "static_typechecking_performed": false,
+  "cases": [
+    {
+      "id": "citrus-v4-authored-0018",
+      "environment": "luau-web 1.5.0 / Luau WASM",
+      "scope": "pure_luau_assertions",
+      "code_sha256": "4022a8bc9788b44a219755233026bffd569b8d9e20cb859541d5a68df26f5b83",
+      "passed": true,
+      "roblox_studio": false,
+      "typechecked": false
+    },
+    {
+      "id": "citrus-v4-authored-0019",
+      "environment": "luau-web 1.5.0 / Luau WASM",
+      "scope": "pure_luau_assertions",
+      "code_sha256": "a05fbbd940f5d68a93c2ac5cd409b91a825afa044c422eea55a732d71607d9d1",
+      "passed": true,
+      "roblox_studio": false,
+      "typechecked": false
+    },
+    {
+      "id": "citrus-v4-authored-0020",
+      "environment": "luau-web 1.5.0 / Luau WASM",
+      "scope": "pure_luau_assertions",
+      "code_sha256": "0c661c31c7e9a7b265048288fc18954de74366cb4875b00c415bce993d880e25",
+      "passed": true,
+      "roblox_studio": false,
+      "typechecked": false
+    },
+    {
+      "id": "citrus-v4-authored-0054",
+      "environment": "luau-web 1.5.0 / Luau WASM",
+      "scope": "pure_luau_assertions",
+      "code_sha256": "f7f0e5a8576062d2df9ae33e65e175b862b0d31d6db9353a8323aaf59f848776",
+      "passed": true,
+      "roblox_studio": false,
+      "typechecked": false
+    },
+    {
+      "id": "citrus-v4-authored-0060",
+      "environment": "luau-web 1.5.0 / Luau WASM",
+      "scope": "pure_luau_assertions",
+      "code_sha256": "783a228395225057bb66cf1b7cda9830d4fbbbe6915a2a42c1400a96dfa1da90",
+      "passed": true,
+      "roblox_studio": false,
+      "typechecked": false
+    }
+  ]
+}
